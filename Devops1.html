@@ -1,0 +1,3119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DevOps Manual</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="p-2">
+        <div class="row">
+          <div class="col-3">
+            <a href="https://rainbow.ltts.com" class="logo" target="blank">
+              <img src="./lntlogo.png" alt="LTTSLOGO" srcset="" />
+            </a>
+          </div>
+          <div class="col-9 text-center">
+            <h1 class="title">DevOps Manual</h1>
+          </div>
+        </div>
+      </header>
+      <div class="container-fluid mt-5">
+        <div class="row">
+          <div class="col-3">
+            <section class="sidebar">
+              <ul class="navbar-nav nav mr-auto sidenav" id="navAccordion">
+                <li class="nav-item">
+                  <a class="nav-link" id="link_DevOps" href="#"
+                    ><h5>DevOps</h5></a
+                  >
+                </li>
+				<li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems1"
+                    aria-controls="collapseSubItems1"
+                    aria-expanded="false"
+                    >Agile Methodologies</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems1"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_JIRA"
+                        href="#"
+                      >
+                        <span class="nav-link-text">JIRA</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				<li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems2"
+                    aria-controls="collapseSubItems2"
+                    aria-expanded="false"
+                    >SCM</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems2"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document active"
+                        href="#"
+                        id="link_GIT"
+                      >
+                        <span class="nav-link-text" id="gt">GIT</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_BITBUCKET"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="bb">BITBUCKET</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				<li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems3"
+                    aria-controls="collapseSubItems3"
+                    aria-expanded="false"
+                    >Artifacts Management</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems3"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Nexus"
+                        href="#"
+                      >
+                        <span class="nav-link-text">Nexus</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems4"
+                    aria-controls="collapseSubItems4"
+                    aria-expanded="false"
+                    >Continuous Integration</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems4"
+                    data-parent="#navAccordion"
+                  >
+                    
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Jenkins"
+                        href="#"
+                      >
+                        <span class="nav-link-text">Jenkins</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Bamboo"
+                        href="#"
+                      >
+                        <span class="nav-link-text">Bamboo</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				<!-- doing r & d -->
+				 <li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems10"
+                    aria-controls="collapseSubItems10"
+                    aria-expanded="false"
+                    >Build Tools</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems10"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Maven"
+                        href="#"
+                      >
+                        <span class="nav-link-text">Maven</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Gradle"
+                        href="#"
+                      >
+                        <span class="nav-link-text">Gradle</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_MS_Build"
+                        href="#"
+                      >
+                        <span class="nav-link-text">MS_Build</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				
+				<!-- end here -->
+				
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems5"
+                    aria-controls="collapseSubItems5"
+                    aria-expanded="false"
+                    >Continuous Testing</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems5"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_JUNIT"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="jt">JUNIT</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_SonarQube"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="sq">SonarQube</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				<li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems6"
+                    aria-controls="collapseSubItems6"
+                    aria-expanded="false"
+                    >Continuous Deployment</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems6"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_CD_using_Jenkins"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="jt">CD_using_Jenkins</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_CD_using_Gitlab"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="sq">CD_using_Gitlab</span>
+                      </a>
+                    </li>
+					<li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_CD_Using_Azure_DevOps"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="sq">CD_Using_Azure_DevOps</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				<li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems7"
+                    aria-controls="collapseSubItems7"
+                    aria-expanded="false"
+                    >Configuration Management</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems7"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Ansible"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="cm">Ansible</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Terraform"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="sq">Terraform</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				<li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems8"
+                    aria-controls="collapseSubItems8"
+                    aria-expanded="false"
+                    >Pipeline</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems8"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_ci_cd"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="cc">ci_cd</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				<li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems9"
+                    aria-controls="collapseSubItems9"
+                    aria-expanded="false"
+                    >Configuration Monitoring</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems9"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Nagios"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="jt">Nagios</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_ELK"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="sq">ELK</span>
+                      </a>
+                    </li>
+					 <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_PnG"
+                        href="#"
+                      >
+					  
+                        <span class="nav-link-text" id="sq">PnG</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+				
+				<li class="nav-item">
+                  <a
+                    class="nav-link nav-link-collapse"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapseSubItems10"
+                    aria-controls="collapseSubItems10"
+                    aria-expanded="false"
+                    >Linux Admin</a
+                  >
+                  <ul
+                    class="navbar-nav nav-second-level collapse"
+                    id="collapseSubItems10"
+                    data-parent="#navAccordion"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-document"
+                        id="link_Linux_Content"
+                        href="#"
+                      >
+                        <span class="nav-link-text" id="jt">Linux_Content</span>
+                      </a>
+                    </li>
+              </ul>
+            </section>
+			
+          </div>
+          <div class="col-9">
+            <section class="content">
+              <div class="show" id="devOpsContent">
+                <h3>DevOps Manual</h3>
+                <p>Placeholder to explain something about DevOps</p>
+              </div>
+			  
+			  	<div class="accordion hide" id="content_Agile Methodologies">
+                <h4 id="doument-heading" class="pl-2 pb-3">Agile Methodologies</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Agile Methodologies_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Agile_CONTENT"
+                    id="heading_Agile_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Agile_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Agile_CONTENT"
+                    data-parent="#content_Agile"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is Agile</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is Agile</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Agile_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Agile_VIDEOS"
+                    id="heading_Agile_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Agile_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_AGILE_VIDEOS"
+                    data-parent="#content_AGILE"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >AGILE Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >AGILE Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#AGILE_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="AGILE_CONTENT"
+                    id="heading_AGILE_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="AGILE_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_AGILE_CONTENT"
+                    data-parent="#content_AGILE"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is AGILE</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is AGILE</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <div class="accordion hide" id="content_JIRA">
+                <h4 id="doument-heading" class="pl-2 pb-3">JIRA</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#JIRA_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="JIRA_CONTENT"
+                    id="heading_JIRA_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="JIRA_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_JIRA_CONTENT"
+                    data-parent="#content_JIRA"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is JIRA</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >JIRA Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#JIRA_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="JIRA_VIDEOS"
+                    id="heading_JIRA_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="JIRA_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_JIRA_VIDEOS"
+                    data-parent="#content_JIRA"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >JIRA Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >JIRA Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#JIRA_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="JIRA_CONTENT"
+                    id="heading_JIRA_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="JIRA_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_JIRA_CONTENT"
+                    data-parent="#content_JIRA"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of JIRA</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >JIRA workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion hide" id="content_SCM">
+                <h4 id="doument-heading" class="pl-2 pb-3">SCM</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CI_SCM_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="CI_SCM_CONTENT"
+                    id="heading_CI_SCM_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="CI_SCM_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_CI_SCM_CONTENT"
+                    data-parent="#content_SCM"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is source code management</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is source code management</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CI_SCM_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="CI_SCM_VIDEOS"
+                    id="heading_CI_SCM_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="CI_SCM_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_CI_SCM_VIDEOS"
+                    data-parent="#content_SCM"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is source code management</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is source code management</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion hide" id="content_GIT">
+                <h4 id="doument-heading" class="pl-2 pb-3">GIT</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CI_GIT_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="CI_GIT_CONTENT"
+                    id="heading_CI_GIT_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="CI_GIT_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_CI_GIT_CONTENT"
+                    data-parent="#content_GIT"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is GIT</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is GIT</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CI_GIT_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="CI_GIT_VIDEOS"
+                    id="heading_CI_GIT_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="CI_GIT_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_CI_GIT_VIDEOS"
+                    data-parent="#content_GIT"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >GIT Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >GIT Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CI_GIT_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="CI_GIT_CONTENT"
+                    id="heading_CI_GIT_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="CI_GIT_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_CI_GIT_CONTENT"
+                    data-parent="#content_GIT"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is GIT</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >What is GIT</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			  <!-- bit bucket content vedio document code -->
+			  <div class="accordion hide" id="content_BITBUCKET">
+                <h4 id="doument-heading" class="pl-2 pb-3">BITBUCKET</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#BITBUCKET_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="BITBUCKET_CONTENT"
+                    id="heading_BITBUCKET_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="BITBUCKET_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_BITBUCKET_CONTENT"
+                    data-parent="#content_BITBUCKET"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is BITBUCKET</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >BITBUCKET Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#BITBUCKET_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="BITBUCKET_VIDEOS"
+                    id="heading_BITBUCKET_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="BITBUCKET_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_BITBUCKET_VIDEOS"
+                    data-parent="#content_BITBUCKET"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >BITBUCKET Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >BITBUCKET Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#BITBUCKET_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="BITBUCKET_CONTENT"
+                    id="heading_BITBUCKET_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="BITBUCKET_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_BITBUCKET_CONTENT"
+                    data-parent="#content_BITBUCKET"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of BITBUCKET</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >BITBUCKET workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <!-- end of bit bucket -->
+			  
+			  <!-- Maven build content demo document -->
+			  <div class="accordion hide" id="content_Maven">
+                <h4 id="doument-heading" class="pl-2 pb-3">Maven</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Maven_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Maven_CONTENT"
+                    id="heading_Maven_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Maven_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Maven_CONTENT"
+                    data-parent="#content_Maven"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Maven</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Maven Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Maven_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Maven_VIDEOS"
+                    id="heading_Maven_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Maven_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Maven_VIDEOS"
+                    data-parent="#content_Maven"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Maven Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Maven Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Maven_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Maven_CONTENT"
+                    id="heading_Maven_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Maven_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Maven_CONTENT"
+                    data-parent="#content_Maven"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Maven</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Maven workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			  <!-- Maven codes end here -->
+			  
+			  <!-- Gradle content document vedio code below -->
+			  
+			  <div class="accordion hide" id="content_Gradle">
+                <h4 id="doument-heading" class="pl-2 pb-3">Gradle</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Gradle_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Gradle_CONTENT"
+                    id="heading_Gradle_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Gradle_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Gradle_CONTENT"
+                    data-parent="#content_Gradle"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Gradle</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Gradle Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Gradle_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Gradle_VIDEOS"
+                    id="heading_Gradle_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Gradle_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Gradle_VIDEOS"
+                    data-parent="#content_Gradle"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Gradle Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Gradle Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Gradle_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Gradle_CONTENT"
+                    id="heading_Gradle_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Gradle_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Gradle_CONTENT"
+                    data-parent="#content_Gradle"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Gradle</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Gradle workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <!-- gradle code end here -->
+			  
+			  <!-- MS Build content vedio document code below -->
+			  <div class="accordion hide" id="content_MS_Build">
+                <h4 id="doument-heading" class="pl-2 pb-3">MS_Build</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#MS_Build_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="MS_Build_CONTENT"
+                    id="heading_MS_Build_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="MS_Build_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_MS_Build_CONTENT"
+                    data-parent="#content_MS_Build"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is MS_Build</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >MS_Build Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#MS_Build_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="MS_Build_VIDEOS"
+                    id="heading_MS_Build_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="MS_Build_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_MS_Build_VIDEOS"
+                    data-parent="#content_MS_Build"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >MS_Build Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >MS_Build Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#MS_Build_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="MS_Build_CONTENT"
+                    id="heading_MS_Build_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+				  
+                  <div
+                    id="MS_Build_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_MS_Build_CONTENT"
+                    data-parent="#content_MS_Build"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of MS Build</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >MS Build workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <!-- MS build code end above -->
+			  
+			  <div class="accordion hide" id="content_Nexus">
+                <h4 id="doument-heading" class="pl-2 pb-3">Nexus</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Nexus_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Nexus_CONTENT"
+                    id="heading_Nexus_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Nexus_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Nexus_CONTENT"
+                    data-parent="#content_Nexus"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Nexus</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Nexus Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Nexus_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Nexus_VIDEOS"
+                    id="heading_Nexus_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Nexus_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Nexus_VIDEOS"
+                    data-parent="#content_Nexus"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Nexus Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Nexus Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Nexus_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Nexus_CONTENT"
+                    id="heading_Nexus_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Nexus_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Nexus_CONTENT"
+                    data-parent="#content_Nexus"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Nexus</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Nexus workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <div class="accordion hide" id="content_Jenkins">
+                <h4 id="doument-heading" class="pl-2 pb-3">Jenkins</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Jenkins_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Jenkins_CONTENT"
+                    id="heading_Jenkins_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Jenkins_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Jenkins_CONTENT"
+                    data-parent="#content_Jenkins"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Jenkins</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Jenkins Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Jenkins_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Jenkins_VIDEOS"
+                    id="heading_Jenkins_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Jenkins_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Jenkins_VIDEOS"
+                    data-parent="#content_Jenkins"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Jenkins Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Jenkins Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Jenkins_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Jenkins_CONTENT"
+                    id="heading_Jenkins_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Jenkins_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Jenkins_CONTENT"
+                    data-parent="#content_Jenkins"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Jenkins</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Jenkins workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			  <!-- bamboo content document vedio code -->
+			  <div class="accordion hide" id="content_Bamboo">
+                <h4 id="doument-heading" class="pl-2 pb-3">Bamboo</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Bamboo_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Bamboo_CONTENT"
+                    id="heading_Bamboo_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Bamboo_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Bamboo_CONTENT"
+                    data-parent="#content_Bamboo"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Bamboo</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Bamboo Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Bamboo_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Bamboo_VIDEOS"
+                    id="heading_Bamboo_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Bamboo_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Bamboo_VIDEOS"
+                    data-parent="#content_Bamboo"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Bamboo Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Bamboo Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Bamboo_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Bamboo_CONTENT"
+                    id="heading_Bamboo_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Bamboo_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Bamboo_CONTENT"
+                    data-parent="#content_Bamboo"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Bamboo</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Bamboo workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			  <!-- bamboo end -->
+			  
+			  
+			 <!-- junit content document vedio code below -->
+			 
+			 <div class="accordion hide" id="content_JUNIT">
+                <h4 id="doument-heading" class="pl-2 pb-3">JUNIT</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#JUNIT_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="JUNIT_CONTENT"
+                    id="heading_JUNIT_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="JUNIT_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_JUNIT_CONTENT"
+                    data-parent="#content_JUNIT"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is JUNIT</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >JUNIT Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#JUNIT_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="JUNIT_VIDEOS"
+                    id="heading_JUNIT_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="JUNIT_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_JUNIT_VIDEOS"
+                    data-parent="#content_JUNIT"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >JUNIT Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >JUNIT Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#JUNIT_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="JUNIT_CONTENT"
+                    id="heading_JUNIT_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="JUNIT_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_JUNIT_CONTENT"
+                    data-parent="#content_JUNIT"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of JUNIT</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >JUNIT workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			 <!-- junit code end -->
+			 
+			 
+			 <!-- sonar qube content vedio document -->
+			 
+			 <div class="accordion hide" id="content_SonarQube">
+                <h4 id="doument-heading" class="pl-2 pb-3">SonarQube</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#SonarQube_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="SonarQube_CONTENT"
+                    id="heading_SonarQube_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="SonarQube_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_SonarQube_CONTENT"
+                    data-parent="#content_SonarQube"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is SonarQube</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >SonarQube Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#SonarQube_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="SonarQube_VIDEOS"
+                    id="heading_SonarQube_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="SonarQube_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_SonarQube_VIDEOS"
+                    data-parent="#content_SonarQube"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >SonarQube Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >SonarQube Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#SonarQube_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="SonarQube_CONTENT"
+                    id="heading_SonarQube_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="SonarQube_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_SonarQube_CONTENT"
+                    data-parent="#content_SonarQube"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of SonarQube</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >SonarQube workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			 <!-- sonarqube code end -->
+			 
+			 
+			 <!-- CD using jenkins content video document -->
+			<div class="accordion hide" id="content_CD_using_Jenkins">
+                <h4 id="doument-heading" class="pl-2 pb-3">CD_using_Jenkins</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_using_Jenkins_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="CD_using_Jenkins_CONTENT"
+                    id="heading_CD_using_Jenkins_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="CD_using_Jenkins_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_CD_using_Jenkins_CONTENT"
+                    data-parent="#content_CD_using_Jenkins"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is CD using Jenkins</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >CD using Jenkins Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_using_Jenkins_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="CD_using_Jenkins_VIDEOS"
+                    id="heading_CD_using_Jenkins_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="CD_using_Jenkins_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_CD_using_Jenkins_VIDEOS"
+                    data-parent="#content_CD_using_Jenkins"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >CD using Jenkins Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >CD using Jenkins Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_using_Jenkins_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="CD_using_Jenkins_CONTENT"
+                    id="heading_CD_using_Jenkins_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="CD_using_Jenkins_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_CD_using_Jenkins_CONTENT"
+                    data-parent="#content_CD_using_Jenkins"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of CD using Jenkins</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >CD using Jenkins workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- CD using jenkins code end -->
+			
+			
+			<!-- cd using gitlab -->
+			
+			<div class="accordion hide" id="content_CD_using_Gitlab">
+                <h4 id="doument-heading" class="pl-2 pb-3">CD_using_Gitlab</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_using_Gitlab_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="CD_using_Gitlab_CONTENT"
+                    id="heading_CD_using_Gitlab_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="CD_using_Gitlab_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_CD_using_Gitlab_CONTENT"
+                    data-parent="#content_CD_using_Gitlab"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is CD_using_Gitlab</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >CD_using_Gitlab Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_using_Gitlab_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="CD_using_Gitlab_VIDEOS"
+                    id="heading_CD_using_Gitlab_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="CD_using_Gitlab_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_CD_using_Gitlab_VIDEOS"
+                    data-parent="#content_CD_using_Gitlab"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >CD_using_Gitlab Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >CD_using_Gitlab Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_using_Gitlab_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="CD_using_Gitlab_CONTENT"
+                    id="heading_CD_using_Gitlab_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="CD_using_Gitlab_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_CD_using_Gitlab_CONTENT"
+                    data-parent="#content_CD_using_Gitlab"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of CD_using_Gitlab</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >CD_using_Gitlab workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			
+			<!-- code end here -->
+			
+			<!-- cd using azure devops content document vedio code here -->
+			
+			<div class="accordion hide" id="content_CD_Using_Azure_DevOps">
+                <h4 id="doument-heading" class="pl-2 pb-3">CD_Using_Azure_DevOps</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_Using_Azure_DevOps_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="CD_Using_Azure_DevOps_CONTENT"
+                    id="heading_CD_Using_Azure_DevOps_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="CD_Using_Azure_DevOps_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_CD_Using_Azure_DevOps_CONTENT"
+                    data-parent="#content_CD_Using_Azure_DevOps"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is CD Using Azure DevOps</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >CD Using Azure DevOps Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_Using_Azure_DevOps_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="CD_Using_Azure_DevOps_VIDEOS"
+                    id="heading_CD_Using_Azure_DevOps_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="CD_Using_Azure_DevOps_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_CD_Using_Azure_DevOps_VIDEOS"
+                    data-parent="#content_CD_Using_Azure_DevOps"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >CD Using Azure DevOps Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >CD Using Azure DevOps Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#CD_Using_Azure_DevOps_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="CD_Using_Azure_DevOps_CONTENT"
+                    id="heading_CD_Using_Azure_DevOps_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="CD_Using_Azure_DevOps_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_CD_Using_Azure_DevOps_CONTENT"
+                    data-parent="#content_CD_Using_Azure_DevOps"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of CD Using Azure DevOps</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >CD Using Azure DevOps workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			
+			<!-- cd using azure devops codes end here -->
+			
+			<!-- ansible content document code -->
+			<div class="accordion hide" id="content_Ansible">
+                <h4 id="doument-heading" class="pl-2 pb-3">Ansible</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Ansible_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Ansible_CONTENT"
+                    id="heading_Ansible_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Ansible_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Ansible_CONTENT"
+                    data-parent="#content_Ansible"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Ansible</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Ansible Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Ansible_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Ansible_VIDEOS"
+                    id="heading_Ansible_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Ansible_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Ansible_VIDEOS"
+                    data-parent="#content_Ansible"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Ansibles Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Ansible Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Ansible_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Ansible_CONTENT"
+                    id="heading_Ansible_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Ansible_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Ansible_CONTENT"
+                    data-parent="#content_Ansible"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Ansible</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Ansible workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			<!-- ansible end here -->
+			
+			<!-- terraform content vedio document code below -->
+			<div class="accordion hide" id="content_Terraform">
+                <h4 id="doument-heading" class="pl-2 pb-3">Terraform</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Terraform_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Terraform_CONTENT"
+                    id="heading_Terraform_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Terraform_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Terraform_CONTENT"
+                    data-parent="#content_Terraform"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Terraform</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Terraform Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Terraform_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Terraform_VIDEOS"
+                    id="heading_Terraform_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Terraform_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Terraform_VIDEOS"
+                    data-parent="#content_Terraform"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Terraform Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Terraform Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Terraform_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Terraform_CONTENT"
+                    id="heading_Terraform_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Terraform_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Terraform_CONTENT"
+                    data-parent="#content_Terraform"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Terraform</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Terraform workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			<!-- terraform code end -->
+			
+			<!-- ci/cd content video document -->
+			
+			<div class="accordion hide" id="content_ci_cd">
+                <h4 id="doument-heading" class="pl-2 pb-3">ci_cd</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#ci_cd_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="ci_cd_CONTENT"
+                    id="heading_ci_cd_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="ci/cd_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_ci_cd_CONTENT"
+                    data-parent="#content_ci_cd"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is CI/CD</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >CI/CD Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#ci_cd_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="ci_cd_VIDEOS"
+                    id="heading_ci_cd_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="ci/cd_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_ci_cd_VIDEOS"
+                    data-parent="#content_ci_cd"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >CI/CD Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >CI/CD Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#ci_cd_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="ci_cd_CONTENT"
+                    id="heading_ci_cd_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="ci_cd_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_ci_cd_CONTENT"
+                    data-parent="#content_ci_cd"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of CI/CD</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >CI/CD  workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			<!-- ci/cd code ends here -->
+			
+			<!--Nagios code -->
+			<div class="accordion hide" id="content_Nagios">
+                <h4 id="doument-heading" class="pl-2 pb-3">Nagios</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Nagios_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Nagios_CONTENT"
+                    id="heading_Nagios_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Nagios_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Nagios_CONTENT"
+                    data-parent="#content_Nagios"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Nagios</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Nagios Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Nagios_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Nagios_VIDEOS"
+                    id="heading_Nagios_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Nagios_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Nagios_VIDEOS"
+                    data-parent="#content_Nagios"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Nagios Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Nagios Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Nagios_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Nagios_CONTENT"
+                    id="heading_Nagios_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Nagios_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Nagios_CONTENT"
+                    data-parent="#content_Nagios"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Nagios</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Nagios workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			
+			<!--Nagios code ends -->
+			
+			<!-- ELK code starts -->
+			<div class="accordion hide" id="content_ELK">
+                <h4 id="doument-heading" class="pl-2 pb-3">ELK</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#ELK_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="ELK_CONTENT"
+                    id="heading_ELK_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="ELK_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_ELK_CONTENT"
+                    data-parent="#content_ELK"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is ELK</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >ELK Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#ELK_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="ELK_VIDEOS"
+                    id="heading_ELK_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="ELK_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_ELK_VIDEOS"
+                    data-parent="#content_ELK"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >ELK Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >ELK Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#ELK_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="ELK_CONTENT"
+                    id="heading_ELK_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="ELK_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_ELK_CONTENT"
+                    data-parent="#content_ELK"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of ELK</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >ELK workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			
+			<!-- ELK code ends -->
+			
+			<!-- P&G code starts -->
+			<div class="accordion hide" id="content_PnG">
+                <h4 id="doument-heading" class="pl-2 pb-3">PnG</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#PnG_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="PnG_CONTENT"
+                    id="heading_PnG_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="PnG_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_PnG_CONTENT"
+                    data-parent="#content_PnG"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is P&G</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >P&G Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#PnG_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="PnG_VIDEOS"
+                    id="heading_PnG_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="PnG_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_PnG_VIDEOS"
+                    data-parent="#content_PnG"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >P&G Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >P&G Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#PnG_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="PnG_CONTENT"
+                    id="heading_PnG_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="PnG_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_PnG_CONTENT"
+                    data-parent="#content_PnG"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of P&G</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >P&G workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			<!-- P&G code ends -->
+			
+			
+			<!-- Linux Content code starts -->
+			
+			<div class="accordion hide" id="content_Linux_Content">
+                <h4 id="doument-heading" class="pl-2 pb-3">Linux_Content</h4>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Linux_Content_CONTENT"
+                    aria-expanded="true"
+                    aria-controls="Linux_Content_CONTENT"
+                    id="heading_Linux_Content_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Content
+                    </h6>
+                  </div>
+
+                  <div
+                    id="Linux_Content_CONTENT"
+                    class="collapse show"
+                    aria-labelledby="heading_Linux_Content_CONTENT"
+                    data-parent="#content_Linux_Content"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://en.wikipedia.org/wiki/Jira_(software)/"target="_blank"
+                            >What is Linux Content</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/jira"target="_blank"
+                            >Linux Content Work Flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Linux_Content_VIDEOS"
+                    aria-expanded="false"
+                    aria-controls="Linux_Content_VIDEOS"
+                    id="heading_Linux_Content_VIDEOS"
+                  >
+                    <h6 class="mb-0">
+                      Video
+                    </h6>
+                  </div>
+                  <div
+                    id="Linux_Content_VIDEOS"
+                    class="collapse"
+                    aria-labelledby="heading_Linux_Content_VIDEOS"
+                    data-parent="#content_Linux_Content"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Linux Content Video 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://arcadsoftware.com/news-events/blog/what-is-source-code-management/"
+                            >Linux Content Video 2</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header"
+                    data-toggle="collapse"
+                    data-target="#Linux_Content_CONTENT"
+                    aria-expanded="false"
+                    aria-controls="Linux_Content_CONTENT"
+                    id="heading_Linux_Content_CONTENT"
+                  >
+                    <h6 class="mb-0">
+                      Document
+                    </h6>
+                  </div>
+                  <div
+                    id="Linux_Content_CONTENT"
+                    class="collapse"
+                    aria-labelledby="heading_Linux_Content_CONTENT"
+                    data-parent="#content_Linux_Content"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Defination of Linux Content</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://confluence.atlassian.com/adminjiraserver071/working-with-workflows-802592661.html"
+                            >Linux Content workflow Overview</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			
+			<!-- Linux Content code ends -->
+			
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
